@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Siti Rahmah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo">ES<span>ER</span></h2>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Profile</a></li>
+                    <li><a href="#galeri">Gallery</a></li>
+                    <li><a href="#aktifitas">Activities</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h4>Hi, Im</h4>
+            <h1>Siti<span>Rahmah</span></h1>
+            <h3>In my <span>cegil</span> era.</h3>
+        </div>
+    </div>
+    <!-------------About-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="background/gwej.jpeg">
+                </div>
+                <div class="about-col-2 ">
+                    <h1 class="sub-title">About<span></span> Me</h1>
+                    <p><p> Siti Rahmah adalah anak soleha sejagat raya.  Ia merupakan mahasiswa program studi Sistem Informasi di UIN Suska Riau. Kegiatan sehari - harinya adalah belajar dengan semangat dan penuh ketekunan sambil melewati badai, halangan dan rintangan demi mencapai gelar S.Kom. Harapannya adalah lulus tepat waktu bukan . BISMILLAH S.kom. </p>
+
+                         </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Hobby')">Hobby</p>
+                        <p class="tab-links " onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Hobby">
+                        <ul>
+                            <li><span>Reading</span><br>Novel, Fairytales, Alternate Universe, Short Story</li>
+                            <li><span>Music</span><br>Singing, Listening to Music</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2011-2016</span><br>SDN 005 Kepenuhan</li>
+                            <li><span>2016-2019</span><br>MTsN 4 Rokan Hulu</li>
+                            <li><span>2019-2022</span><br>MAS TMI PP. Khalid bin Walid</li>
+                            <li><span>2022-Now</span><br>UIN Sultan Syarif Kasim Riau</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------Gallery------------>
+    <div id="gallery">
+        <div class="container">
+            <div class="col">
+                <h2>My Gallery<span></span></h2>
+                <p>moment yang sangat berkesan bagi saya seperti bergabung di kepanitiaan fortafaste, 
+                pbak, ikut serta dalam HIMASI, dan tergabung sebagai panitia milad si yang ke-21
+            </p>
+            </div>
+    <div class="col">
+        <div class="card card1">
+            <h6>fortafaste</h6>
+        </div>
+        <div class="card card2">
+            <h6>pbak</h6>
+        </div>
+        <div class="card card3">
+            <h6>himasi</h6>
+        </div>
+        <div class="card card4">
+            <h6>milad si ke-21</h6>
+    </div>
+
+
+    <!--------------------- Aktivity ----------------->
+    <div id="aktifitas">
+        <div class="container">
+            <h1 class="sub-title">My Activities<span></span></h1>
+            <div class="list-aktifitas">
+                <div>
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h2>Studying</h2>
+                    <p> I study at a well-known university in Riau province called Sultan Syarif Kasim State Islamic University, Riau</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <h2>Self Care</h2>
+                    <p>In my free time, especially in every morning and night , I often use skincare routine.very week, I will exercise, go for walks, and do many other things that make me happy. </p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Organization</h2>
+                    <P>I have now joined the HIMASI management for the 2023 period</P>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--------------------- contact ----------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">HUBUNGI SAYA</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sitirahmah090604@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>082121926819</p>
+                </div>
+                <div class="contact-right">
+                    <div class="social-icons">
+                        <h1>SOCIAL MEDIA</h1>
+                        <a href="https://www.instagram.com/eseryyl_/"><i class="fa-brands fa-instagram"></i>SitiRahmah</a>
+                        <a href="https://wa.me/682121926819"><i class="fa-brands fa-whatsapp"></i>+6282121926819</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+        <p>CopyRight by SitiRahmah</p>
+    </footer>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+</body>
+
+</html>
